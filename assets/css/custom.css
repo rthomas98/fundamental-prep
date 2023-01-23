@@ -8,3 +8,6 @@ Make sure to respect the media queries! Otherwise you may
 accidentally add desktop styles to the mobile layout.
 https://www.w3schools.com/css/css_rwd_mediaqueries.asp
 --------------------------------------------------------------*/
+.page-template-page-fullwidth-marketing {
+    background-color: white;
+}
