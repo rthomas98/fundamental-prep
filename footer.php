@@ -17,11 +17,23 @@
 </div><!-- .container -->
 </div><!-- #content -->
 
-<footer>
-    <div class="container">
-        sdfsdfsdf
-    </div>
-</footer>
+
+<?php if ( is_user_logged_in() ) { ?>
+
+    <footer>
+        <div class="container">
+            <a href="<?php echo wp_logout_url(); ?>">Logout</a>
+        </div>
+    </footer>
+<?php } else { ?>
+    <footer>
+        <div class="container">
+            <a href="/wp-login.php" title="Members Area Login" rel="home">Members Area</a>
+        </div>
+    </footer>
+<?php } ?>
+
+
 
 </div><!-- #page -->
 
